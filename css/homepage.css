@@ -1,0 +1,121 @@
+/********************************************************/
+/*           stylesheet for Racingfan site              */
+/*               author: Adri Barrios                   */
+/*                   version: 1.0                       */
+/*                  comment:project                     */
+/********************************************************/
+
+@font-face {
+    font-family: Title;
+    src: url(../fonts/SuperCar-OutlineExpMRDemo.otf);
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Arial', sans-serif;
+    background-size: cover;
+    background-color: #747474;
+    color: #ffffff; 
+}
+
+#wrapper {
+    width: 80%;
+    margin: 0 auto;
+}
+
+header {
+    background-color: #333; 
+    padding: 20px;
+    text-align: center;
+}
+
+#navbar {
+    text-align: center;
+}
+
+#navbar ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+#navbar li {
+    display: inline-block;
+    margin-right: 20px;
+}
+
+#navbar a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+    font-size: 1.2em;
+}
+
+#hero-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    height: 100vh; 
+    padding: 20px; 
+    background-color: #555;
+    color: #fff;
+    background-image: url('../img/title_image.avif');
+    background-size: cover;
+    background-position: center;
+}
+#hero-section h1 {
+    font-family: Title;
+    font-size: 3em;
+    margin-bottom: 10px; 
+}
+
+#hero-section p {
+    font-size: 1.5em;
+    margin-bottom: 20px;
+}
+
+.button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #ff5733;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+}
+#content section {
+    flex-basis: 22%; /* Ajusta el ancho según sea necesario */
+    padding: 20px;
+    background-color: #582e2e;
+    margin-bottom: 20px;
+    border-radius: 5px;
+}
+
+
+/********** responsive ***********/
+
+@media only screen and (max-width: 768px) {
+    #content section {
+        flex-basis: calc(50% - 20px); /* 2 columnas en lugar de 3 en pantallas más pequeñas */
+    }
+}
+
+@media only screen and (max-width: 480px) {
+    #navbar li {
+        display: block;
+        margin-bottom: 10px;
+    }
+
+    #content section {
+        flex-basis: 100%; /* Una columna en pantallas muy pequeñas */
+    }
+}
+
+
+
+
+
+
+
