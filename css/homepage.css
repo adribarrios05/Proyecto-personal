@@ -6,8 +6,8 @@
 /********************************************************/
 
 @font-face {
-    font-family: Title;
-    src: url(../fonts/SuperCar-OutlineExpMRDemo.otf);
+    font-family: 'Title';
+    src: url('../fonts/SuperCar-OutlineExpMRDemo.otf') format('opentype');
 }
 
 body {
@@ -15,7 +15,7 @@ body {
     padding: 0;
     font-family: 'Arial', sans-serif;
     background-size: cover;
-    background-color: #747474;
+    background-color: #888888;
     color: #ffffff; 
 }
 
@@ -30,6 +30,9 @@ header {
     text-align: center;
 }
 
+
+/*************navbar**************/
+
 #navbar {
     text-align: center;
 }
@@ -43,6 +46,7 @@ header {
 #navbar li {
     display: inline-block;
     margin-right: 20px;
+    gap: 15%;
 }
 
 #navbar a {
@@ -52,6 +56,8 @@ header {
     font-size: 1.2em;
 }
 
+/***********hero-section************/
+
 #hero-section {
     display: flex;
     flex-direction: column;
@@ -60,7 +66,7 @@ header {
     text-align: center;
     height: 100vh; 
     padding: 20px; 
-    background-color: #555;
+    background-color: #636363;
     color: #fff;
     background-image: url('../img/title_image.avif');
     background-size: cover;
@@ -68,7 +74,7 @@ header {
 }
 #hero-section h1 {
     font-family: Title;
-    font-size: 3em;
+    font-size: 1.5em;
     margin-bottom: 10px; 
 }
 
@@ -85,33 +91,146 @@ header {
     text-decoration: none;
     border-radius: 5px;
 }
+
+    /* content */
+
+#content{
+    display:grid;
+    grid-template-columns: auto;
+    margin: 2% 10%;
+    gap: 20px;
+}
+#content img{
+    display: block;
+    width: 100%;
+}
 #content section {
     flex-basis: 22%; /* Ajusta el ancho según sea necesario */
     padding: 20px;
-    background-color: #582e2e;
+    background-color: #603b3b;
     margin-bottom: 20px;
     border-radius: 5px;
 }
 
+/******* Footer *******/
+
+footer {
+    padding-top: 20px;
+    align-items: center;
+    background-color: #333;
+}
+.grid-3 {
+    text-align: center;
+    display:grid;
+    grid-template-columns:auto;
+    gap:100%;
+}
+
+.col-3{
+    text-align: center;
+    padding-bottom: 20px;
+}
+
+footer a{
+    text-decoration: none;
+    color: white;
+}
+
+footer .grid-3 .col-3 ul{
+    list-style: none;
+    width: 100;
+    margin: 0;
+    padding: 0;
+}
+
+footer ul a li{
+    margin-bottom: 5px;
+    width: 100%;
+    border-bottom: hidden;
+    transition: 1;
+}
+
+footer ul a li:hover{
+    border-bottom: 1px solid white;  
+}
+
+/****************** Ventana modal en footer ********************/
+
+/* The Modal (background) */
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    left: 10%;
+    top: 0;
+    width: 80%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4);  /* Black w/ opacity */
+  }
+  
+  /* Modal Content/Box */
+  .modal-content {
+    background-color: #fefefe;
+    margin: 15% auto; /* 15% from the top and centered */
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%; /* Could be more or less, depending on screen size */
+  }
+  
+  /* The Close Button */
+  .close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+  }
+  
+  .close:hover,
+  .close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+  } 
 
 /********** responsive ***********/
 
-@media only screen and (max-width: 768px) {
-    #content section {
-        flex-basis: calc(50% - 20px); /* 2 columnas en lugar de 3 en pantallas más pequeñas */
-    }
-}
 
-@media only screen and (max-width: 480px) {
+
+@media only screen and (width>550px) {
     #navbar li {
         display: block;
         margin-bottom: 10px;
     }
 
+    #content{
+        grid-template-columns: auto auto;
+    }
     #content section {
         flex-basis: 100%; /* Una columna en pantallas muy pequeñas */
     }
+    #hero-section h1{
+        font-size: 2em;
+    }
+    #footer{
+        grid-template-columns: auto auto auto;
+    }
 }
+@media only screen and (width>780px) {
+    #content{
+        grid-template-columns: auto auto auto auto;
+    }
+    #content section {
+        flex-basis: calc(50% - 20px); /* 2 columnas en lugar de 3 en pantallas más pequeñas */
+    }
+    #hero-section h1{
+        font-size:3em;
+    }
+    #footer{
+        grid-template-columns: auto auto auto;
+    }
+}   
 
 
 

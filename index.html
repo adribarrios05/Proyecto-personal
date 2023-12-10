@@ -5,6 +5,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/homepage.css">
+    <link rel="shortcut icon" href="./img/favicon.png" type="image/x-icon">
+    <script src="./js/cars.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <title>Tu Proyecto</title>
 </head>
 
@@ -12,12 +15,12 @@
     <div id="wrapper">
         <header>
             <nav id="navbar">
-                <ul>
-                    <li><a href="#cars-section">Cars</a></li>
-                    <li><a href="#competitions-section">Competitions</a></li>
-                    <li><a href="#history-section">History</a></li>
-                    <li><a href="#about-section">About us</a></li>
-                </ul>
+                    <a href="#cars-section">Cars</a>
+                    <a href="#competitions-section">Competitions</a>
+                    <a href="#history-section">History</a>
+                    <a href="#about-section">About us</a>
+                    <a href="javascript:void(0);" class="icon" onclick="myFunction()"></a>
+            </nav>
             <section id="hero-section">
                 <h1>RacingFans</h1>
                 <p>For ones who loves cars</p>
@@ -27,11 +30,13 @@
 
         <div id="content">
             <section id="cars-section">
+                <img src="./img/cars.jpeg" alt="">
                 <h2>Cars</h2>
                 <p>Explore our collection of the fastest and most powerful cars in the world.</p>
             </section>
 
             <section id="competitions-section">
+                <img src="./img/f1.avif" alt="">
                 <h2>Competitions</h2>
                 <p>Stay updated on the latest racing competitions and events happening worldwide.</p>
             </section>
@@ -45,8 +50,51 @@
                 <h2>About us</h2>
                 <p>Get to know the RacingFans community and the enthusiasts behind the scenes.</p>
             </section>
-        <footer>
+            <footer>
+                <div class="grid-3">
+                    <div class="col-3">   
+                        <ul>
+                            <a href="#">
+                                <li>Home</li>
+                            </a>
+                            <a href="#cars">
+                                <li>Cars</li>
+                            </a>
+                            <a href="#competitions">
+                                <li>Competitions</li>
+                            </a>
+                            <a href="#history">
+                                <li>History</li>
+                            </a>
+                            <a href="#about-us">
+                                <li>About us</li>
+                            </a>
+                        </ul>
+                    </div>
+                    <div class="col-3">
+                        <!-- Trigger/Open The Modal -->
+                        <button id="myBtn">Credits</button>
 
+                        <!-- The Modal -->
+                        <div id="myModal" class="modal">
+
+                        <!-- Modal content -->
+                        <div class="modal-content">
+                            <span class="close">&times;</span>  
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis nisi reiciendis aut a facilis nostrum dolorem commodi necessitatibus odit possimus, corporis esse unde itaque explicabo est neque natus quaerat excepturi!
+                            Sint, possimus rerum, debitis in, velit perspiciatis praesentium veniam harum labore eveniet pariatur facilis tempore esse necessitatibus dolor consequuntur nesciunt laudantium vitae amet. Numquam blanditiis ipsam praesentium iste quas obcaecati.
+                            Ad a dolorum nesciunt nobis! Perferendis architecto accusamus, in vitae soluta ea beatae praesentium neque non mollitia minima tempore iure, quis maiores impedit reiciendis quidem expedita repellendus? Enim, ipsam explicabo.</p>
+                        </div>
+                    </div>
+                    <div class="col-3">
+                        <!-- atribuciones y disclaimers-->
+                        <p>Webpage realized by:<br>
+                        Adrián Barrios Márquez<br>
+                        Lenguaje de marcas<br>
+                        1º DAM - Curso 2023/24</p>
+                    </div>
+                </div>
+            </div>
         </footer>
     </div>
 </body>
