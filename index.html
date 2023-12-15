@@ -6,25 +6,29 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/homepage.css">
     <link rel="shortcut icon" href="./img/favicon.png" type="image/x-icon">
-    <script src="./js/cars.js"></script>
+    <script src="./js/homepage.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-    <title>Tu Proyecto</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>RacingFans | Home</title>
 </head>
 
 <body>
     <div id="wrapper">
+        <nav class="navbar" id="navbar">
+          <a href="#hero-section">Home</a>
+          <a href="#cars-section">Cars</a>
+          <a href="#competitions-section">Competitions</a>
+          <a href="#history-section">History</a>
+          <a href="#funfacts-section">Fun Facts</a>
+          <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+            <i class="fa fa-bars"></i>
+          </a>
+        </nav>
         <header>
-            <nav id="navbar">
-                    <a href="#cars-section">Cars</a>
-                    <a href="#competitions-section">Competitions</a>
-                    <a href="#history-section">History</a>
-                    <a href="#about-section">About us</a>
-                    <a href="javascript:void(0);" class="icon" onclick="myFunction()"></a>
-            </nav>
             <section id="hero-section">
                 <h1>RacingFans</h1>
                 <p>For ones who loves cars</p>
-                <a href="#" class="button">Discover more!</a>
+                <a href="#content" class="button">Discover more!</a>
             </section>
         </header>
 
@@ -33,6 +37,7 @@
                 <img src="./img/cars.jpeg" alt="">
                 <h2>Cars</h2>
                 <p>Explore our collection of the fastest and most powerful cars in the world.</p>
+                <a href="./cars.html" class="button">Discover more!</a>
             </section>
 
             <section id="competitions-section">
@@ -49,56 +54,90 @@
 
             <section id="about-section">
                 <img src="./img/about.jpg" alt="">
-                <h2>About us</h2>
+                <h2>Fun Facts</h2>
                 <p>Get to know the RacingFans community and the enthusiasts behind the scenes.</p>
             </section>
+        </div>
+        <div class="page-wrapper">
             <footer>
-                <div class="grid-3">
-                    <div class="col-3">   
-                        <ul>
-                            <a href="#">
-                                <li>Home</li>
-                            </a>
-                            <a href="#cars">
-                                <li>Cars</li>
-                            </a>
-                            <a href="#competitions">
-                                <li>Competitions</li>
-                            </a>
-                            <a href="#history">
-                                <li>History</li>
-                            </a>
-                            <a href="#about-us">
-                                <li>About us</li>
-                            </a>
-                        </ul>
-                    </div>
-                    <div class="col-3">
-                        <!-- Trigger/Open The Modal -->
-                        <button id="myBtn">Credits</button>
-
-                        <!-- The Modal -->
-                        <div id="myModal" class="modal">
-
-                        <!-- Modal content -->
-                        <div class="modal-content">
-                            <span class="close">&times;</span>  
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis nisi reiciendis aut a facilis nostrum dolorem commodi necessitatibus odit possimus, corporis esse unde itaque explicabo est neque natus quaerat excepturi!
-                            Sint, possimus rerum, debitis in, velit perspiciatis praesentium veniam harum labore eveniet pariatur facilis tempore esse necessitatibus dolor consequuntur nesciunt laudantium vitae amet. Numquam blanditiis ipsam praesentium iste quas obcaecati.
-                            Ad a dolorum nesciunt nobis! Perferendis architecto accusamus, in vitae soluta ea beatae praesentium neque non mollitia minima tempore iure, quis maiores impedit reiciendis quidem expedita repellendus? Enim, ipsam explicabo.</p>
+              <div class="footer-top">
+                <div class="container">
+                  <div class="row">
+                    <div class="col-12 col-lg-6 col-md-6 col-sm-12">
+                      <div class="row">
+                        
+                        <div class="col-6 col-lg-6 col-md-6 col-sm-6">
+                          <div class="widget">
+                            <h5 class="footer-title">Email Us</h5>
+                            <div class="textwidget">
+                              <div role="form" class="wpcf7" id="wpcf7-f4-o1" lang="en-US" dir="ltr">
+                                <form method="post" class="wpcf7-form" novalidate="novalidate">
+                                    <div class="contact-form-footer">
+                                      <p><span class="wpcf7-form-control-wrap your-first-name"><input type="text" name="your-first-name" value="" size="40" class="wpcf7-form-control wpcf7-text" aria-invalid="false" placeholder="Your name"></span></p>
+                                      <p><span class="wpcf7-form-control-wrap your-email_1"><input type="email" name="your-email_1" value="" size="40" class="wpcf7-form-control wpcf7-text wpcf7-email wpcf7-validates-as-email" aria-invalid="false" placeholder="Your email"></span></p>
+                                      <p><span class="wpcf7-form-control-wrap your-message"><textarea name="your-message" cols="40" rows="10" class="wpcf7-form-control wpcf7-textarea" aria-invalid="false" placeholder="Your message"></textarea></span></p>
+                                    <div><input type="submit" value="Send" class="wpcf7-form-control wpcf7-submit"><span class="ajax-loader"></span></div>
+                                  </div>
+                                </form>
+                              </div>
+                            </div>
+                          </div>
                         </div>
+                      </div>
                     </div>
-                    <div class="col-3">
-                        <!-- atribuciones y disclaimers-->
-                        <p>Webpage realized by:<br>
-                        Adrián Barrios Márquez<br>
-                        Lenguaje de marcas<br>
-                        1º DAM - Curso 2023/24</p>
-                    </div>
+                    
+                  </div>
                 </div>
-            </div>
-        </footer>
-    </div>
-</body>
-
+              </div>
+              <div class="footer-bottom">
+                <div class="container">
+                  <div class="row">
+        
+                    <div class="col-md-3">
+                      <div class="footer-site-info">2023 ©</div>
+                    </div>
+        
+                    <div class="col-md-6">
+                      <nav id="footer-navigation" class="site-navigation footer-navigation centered-box" role="navigation">
+                        <ul id="footer-menu" class="nav-menu styled clearfix inline-inside">
+                          <li id="menu-item-26" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-26"><a href="#">Support</a></li>
+                          <li id="menu-item-27" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-27"><a href="#">Contact Us</a></li>
+                          <li id="menu-item-28" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-28"><a href="#">Disclaimer</a></li>
+                          <li id="menu-item-29" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-29"><a href="#">Add more</a></li>
+                        </ul>
+                      </nav>
+                    </div>
+        
+                    <div class="col-md-3">
+                      <div id="footer-socials">
+                        <div class="socials inline-inside socials-colored">
+        
+                          <a href="https://facebook.com" target="_blank" title="Facebook" class="socials-item">
+                            <i class="fa fa-facebook-f facebook"></i>
+                          </a>
+                          <a href="https://x.com" target="_blank" title="Twitter" class="socials-item">
+                            <i class="fa fa-twitter twitter"></i>
+                          </a>
+                          <a href="https://instagram.com" target="_blank" title="Instagram" class="socials-item">
+                            <i class="fa fa-instagram instagram"></i>
+                          </a>
+                          <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" target="_blank" title="YouTube" class="socials-item">
+                            <i class="fa fa-youtube youtube"></i>
+                          </a>
+                          <a href="#" target="_blank" title="Telegram" class="socials-item">
+                            <i class="fa fa-telegram telegram"></i>
+                          </a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </footer>
+          </div>
+          <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+          <script src="http://code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
+          <script src="https://daniellaharel.com/raindrops/js/raindrops.js"></script>
+        </div>
+  </body>
 </html>
