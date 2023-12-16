@@ -1,56 +1,150 @@
 <!DOCTYPE html>
 <html lang="es">
 
-<!--PENDIENTE DE CAMBIOS-->
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/homepage.css">
-    <title>Tu Proyecto</title>
+    <link rel="shortcut icon" href="./img/favicon.png" type="image/x-icon">
+    <script src="./js/homepage.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>RacingFans | Home</title>
 </head>
 
 <body>
     <div id="wrapper">
+        <nav class="navbar" id="navbar">
+          <a href="#hero-section">Home</a>
+          <a href="#cars-section">Cars</a>
+          <a href="#competitions-section">Competitions</a>
+          <a href="#history-section">History</a>
+          <a href="#funfacts-section">Fun Facts</a>
+          <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+            <i class="fa fa-bars"></i>
+          </a>
+        </nav>
         <header>
-            <nav id="navbar">
-                <ul>
-                    <li><a href="#cars-section">Cars</a></li>
-                    <li><a href="#competitions-section">Competitions</a></li>
-                    <li><a href="#history-section">History</a></li>
-                    <li><a href="#about-section">About us</a></li>
-                </ul>
             <section id="hero-section">
                 <h1>RacingFans</h1>
                 <p>For ones who loves cars</p>
-                <a href="#" class="button">Discover more!</a>
+                <a href="#content" class="button">Discover more!</a>
             </section>
         </header>
 
         <div id="content">
             <section id="cars-section">
+                <img src="./img/cars.jpeg" alt="">
                 <h2>Cars</h2>
                 <p>Explore our collection of the fastest and most powerful cars in the world.</p>
+                <a href="./cars.html" class="button">Discover more!</a>
             </section>
 
             <section id="competitions-section">
+                <img src="./img/f1.avif" alt="">
                 <h2>Competitions</h2>
                 <p>Stay updated on the latest racing competitions and events happening worldwide.</p>
+                <a href="./competitions.html" class="button">Discover more!</a>
             </section>
 
             <section id="history-section">
+                <img src="./img/history.jpg" alt="">
                 <h2>History</h2>
                 <p>Learn about the rich history and evolution of the automotive industry and racing.</p>
             </section>
 
             <section id="about-section">
-                <h2>About us</h2>
+                <img src="./img/about.jpg" alt="">
+                <h2>Fun Facts</h2>
                 <p>Get to know the RacingFans community and the enthusiasts behind the scenes.</p>
             </section>
-        <footer>
-
-        </footer>
-    </div>
+        </div>
+        <div class="page-wrapper">
+          <footer>
+            <div class="footer-top">
+              <div class="container">
+                <div class="row">
+                  <div class="col-12 col-lg-6 col-md-6 col-sm-12">
+                    <div class="row">
+                      
+                      <div class="col-6 col-lg-6 col-md-6 col-sm-6">
+                        <div class="widget">
+                          <h5 class="footer-title">Email Us</h5>
+                          <div class="textwidget">
+                            <div role="form" class="wpcf7" id="wpcf7-f4-o1" lang="en-US" dir="ltr">
+                              <form method="post" class="wpcf7-form" novalidate="novalidate">
+                                  <div class="contact-form-footer">
+                                    <p><span class="wpcf7-form-control-wrap your-first-name"><input type="text" name="your-first-name" value="" size="40" class="wpcf7-form-control wpcf7-text" aria-invalid="false" placeholder="Your name"></span></p>
+                                    <p><span class="wpcf7-form-control-wrap your-email_1"><input type="email" name="your-email_1" value="" size="40" class="wpcf7-form-control wpcf7-text wpcf7-email wpcf7-validates-as-email" aria-invalid="false" placeholder="Your email"></span></p>
+                                    <p><span class="wpcf7-form-control-wrap your-message"><textarea name="your-message" cols="40" rows="10" class="wpcf7-form-control wpcf7-textarea" aria-invalid="false" placeholder="Your message"></textarea></span></p>
+                                  <div><input type="submit" value="Send" class="wpcf7-form-control wpcf7-submit"><span class="ajax-loader"></span></div>
+                                </div>
+                              </form>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  
+                </div>
+              </div>
+            </div>
+            <div class="footer-bottom">
+              <div class="container">
+                <div class="row">
+      
+                  <div class="col-md-3">
+                    <div class="footer-site-info">2023 ©</div>
+                  </div>
+      
+                  <div class="col-md-6">
+                    <nav id="footer-navigation" class="site-navigation footer-navigation centered-box" role="navigation">
+                      <ul id="footer-navbar" class="nav menu styled clearfix inline-inside">
+                        <li class="menu-item menu-item-type-custom menu-item-object-custom"><a href="./index.html">Home</a></li>
+                        <li class="menu-item menu-item-type-custom menu-item-object-custom"><a href="./cars.html">Cars</a></li>
+                        <li class="menu-item menu-item-type-custom menu-item-object-custom"><a href="./competitions.html">Competitions</a></li>
+                        <li class="menu-item menu-item-type-custom menu-item-object-custom"><a href="./history.html">History</a></li>
+                      </ul><br>
+                      <ul id="footer-menu" class="nav-menu styled clearfix inline-inside">
+                        <li id="menu-item-26" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-26"><a href="#">Support</a></li>
+                        <li id="menu-item-27" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-27"><a href="#">Contact Us</a></li>
+                        <li id="menu-item-28" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-28"><a href="#">Disclaimer</a></li>
+                        <li id="menu-item-29" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-29"><a href="#">Add more</a></li>
+                      </ul>
+                    </nav>
+                  </div>
+      
+                  <div class="col-md-3">
+                    <div id="footer-socials">
+                      <div class="socials inline-inside socials-colored">
+      
+                        <a href="https://facebook.com" target="_blank" title="Facebook" class="socials-item">
+                          <i class="fa fa-facebook-f facebook"></i>
+                        </a>
+                        <a href="https://x.com" target="_blank" title="Twitter" class="socials-item">
+                          <i class="fa fa-twitter twitter"></i>
+                        </a>
+                        <a href="https://instagram.com" target="_blank" title="Instagram" class="socials-item">
+                          <i class="fa fa-instagram instagram"></i>
+                        </a>
+                        <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" target="_blank" title="YouTube" class="socials-item">
+                          <i class="fa fa-youtube youtube"></i>
+                        </a>
+                        <a href="#" target="_blank" title="Telegram" class="socials-item">
+                          <i class="fa fa-telegram telegram"></i>
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </footer>
+        </div>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+        <script src="http://code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
+        <script src="https://daniellaharel.com/raindrops/js/raindrops.js"></script>
+      </div>
 </body>
-
 </html>

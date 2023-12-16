@@ -88,7 +88,7 @@ header {
 }
 #hero-section h1 {
     font-family: Title;
-    font-size: 3em;
+    font-size: 1.5em;
     margin-bottom: 10px; 
 }
 
@@ -110,10 +110,10 @@ header {
 
 #content{
     display:grid;
-    grid-template-columns: auto auto auto auto;
+    grid-template-columns: auto;
     margin: 2% 10%;
     gap: 20px;
-    text-align: center;
+    text-align: center; 
 }
 #content img{
     display: block;
@@ -191,7 +191,7 @@ footer p, footer strong, footer b, footer {
 }
 #footer-menu li {
     display: inline-block;
-    padding: 0 21px;
+    padding: 0 10%;
     position: relative;
     line-height: 1;
 }
@@ -243,9 +243,8 @@ a.socials-item {
     -o-transition: all 0.3s;
     -webkit-transition: all 0.3s;
     transition: all 0.3s;
-    margin: 0 5px;
     line-height: 16px;
-    padding: 10px;
+    padding: 7px;
     border-radius: 50%;
     background-color: #000000;
     border: 1px solid #000000;
@@ -308,6 +307,11 @@ footer p, footer li {
     margin-bottom: 50px;
 }
 
+#footer-navigation{
+    display:grid;
+    grid-template-columns: auto auto;
+}
+
 .footer-title {
     margin-bottom: 40px;
     color: #fff;
@@ -338,9 +342,13 @@ footer p, footer li {
     padding-right: 10px;
 }
 
-footer .widget ul {
+footer ul {
     list-style: none;
     margin-top: 5px;
+}
+#footer-navbar{
+    margin-left: 2.5%;
+    padding-bottom: 30px;
 }
 
 .posts li {
@@ -472,22 +480,6 @@ img {
     max-width: 100%;
     vertical-align: middle;
 }
-.widget_gallery a {
-    display: inline-block;
-}
-footer .widget ul {
-    list-style: none;
-    margin-top: 5px;
-}
-.widget_gallery ul {
-    padding-left: 0;
-    display: table;
-}
-
-.widget_gallery.gallery-grid-4 li {
-    width: 30%;
-}
-
 .footer-site-info
 {
   padding-top: 10px;
@@ -497,13 +489,13 @@ footer .widget ul {
 
 
 
-@media only screen and (width<900px) {
+@media only screen and (width>550px) {
     #navbar li {
         display: block;
         margin-bottom: 10px;
     }
     #navbar a{
-        padding: 3%;
+        padding: 2.8%;
     }
 
     #content{
@@ -518,19 +510,25 @@ footer .widget ul {
     #footer{
         grid-template-columns: auto auto auto;
     }
+    #footer-menu li{
+        padding: 0 3%;
+    }
 }
-@media only screen and (width<550px) {
+@media only screen and (width>900px) {
     #content{
-        grid-template-columns: auto;
+        grid-template-columns: auto auto auto auto;
     }
     #content section {
         flex-basis: calc(50% - 20px); /* 2 columnas en lugar de 3 en pantallas más pequeñas */
     }
     #hero-section h1{
-        font-size:1.5em;
+        font-size:3em;
     }
     #footer{
         grid-template-columns: auto auto auto;
+    }
+    #footer-menu li{
+        padding: 0 5%;
     }
 }   
 
