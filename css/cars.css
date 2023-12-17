@@ -120,32 +120,34 @@ header {
   opacity: 50%;
 }
 
-#car{
+.car{
   font-family: 'Courier New', Courier, monospace;
   background-color: #740606;
-  line-height: 100%;
+  line-height: 120%;
 
 }
 
-#car h3{
+.car h3{
   text-align: center;
   font-size: 2em;
 }
-#car h4{
+.car h4{
   font-size: 1.7em;
   padding-left: 3%;
 }
-#car p{
+.car p{
   font-size:1.1em;
   padding: 5px;
 }
-#car img{
+.car img{
   display:block;
   width: 100%;
-  padding: auto 5px;
+  padding: 15px ;
 }
 
-* {box-sizing:border-box}
+* {
+  box-sizing:border-box
+}
 
 /* Slideshow container */
 .slideshow-container {
@@ -640,7 +642,7 @@ padding-top: 10px;
 }
 }
 @media only screen and (width>900px) {
-  #ferrari img{
+  .car img{
     width: 30%;
   }
   .img1{
